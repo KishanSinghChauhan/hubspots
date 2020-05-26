@@ -55,7 +55,7 @@ const Header = () =>{
                 </UncontrolledDropdown>
                
                 <NavItem style={{marginTop:'8px'}}>
-                    <NavLink className="nav-text" style={{fontSize:'16px',fontWeight:'500',marginLeft:'12px'}}>Contact Sales</NavLink>
+                    <NavLink className="nav-text" style={{fontSize:'16px',fontWeight:'500',marginLeft:'12px',cursor:'pointer'}}>Contact Sales</NavLink>
                 </NavItem>
                 
             </Nav>

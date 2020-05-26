@@ -467,3 +467,9 @@
   background-size: 100% auto;
   background-position: center;
 }
+
+Button:active,Button:focus{
+  border: none !important;
+  box-shadow: none !important;
+  outline:none !important
+}
