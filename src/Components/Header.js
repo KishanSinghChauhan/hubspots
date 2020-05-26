@@ -100,7 +100,6 @@ const Header = () =>{
                                         <DropdownItem>
                                         Update Soon
                                         </DropdownItem>
-                                        >
                                         
                                     </DropdownMenu>
                                 </UncontrolledDropdown>    
