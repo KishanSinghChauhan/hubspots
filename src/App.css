@@ -1,38 +1,469 @@
-.App {
+@import "~font-awesome/css/font-awesome.css";
+
+* {
+  font-family: 'Avenir Next','Helvetica Neue','Arial','san-serif';
+  font-style: normal;
+  font-weight: normal;
+}
+
+.dropdown-toggle::after {
+  color: #7C98B6;
+}
+
+.main-header {
+  background-color: rgb(245, 248, 250);
+  border: 1px solid rgb(203, 214, 226);
+  height: 80px;
+  position: fixed;
+  width: 102%;
+  top: 0;
+  z-index: 10;
+}
+
+.st2 {
+  opacity:7.000000e-02;
+  fill:#005b4c;
+  enable-background:new
+}
+
+.st3,.st5,.st6,.st7 {
+  stroke:#33475c;
+  stroke-linecap:round;
+  stroke-linejoin:round
+}
+
+.st3 {
+  stroke-width:5;
+  fill:none
+}
+
+.st5,.st6,.st7 {
+  fill:#fff
+}
+
+.st6,.st7 {
+  fill:none
+}
+
+.st7 {
+  fill:#e86e4b
+}
+
+.st8 {
+  fill:#fec7aa
+}.st9{fill:#f38c64}.st10{opacity:.5;fill:#ff7a53;enable-background:new}.st12,.st13,.st14{fill:#ffc7ac;stroke:#33475c;stroke-linecap:round;stroke-linejoin:round}.st13,.st14{fill:#fff3ee}.st14{fill:#ff8f59}.st15{fill:#e68250}.st15,.st16{stroke:#33475c;stroke-linecap:round;stroke-linejoin:round}.st16,.st17{fill:#ffc7aa}.st18,.st19,.st20,.st21,.st22,.st24{fill:#7cd1df;stroke:#33475c;stroke-linecap:round;stroke-linejoin:round}.st19,.st20,.st21,.st22,.st24{fill:#506e91}.st20,.st21,.st22,.st24{fill:#e5f8f6}.st21,.st22,.st24{fill:#c1866c}.st22,.st24{fill:#33475c}.st24{fill:#415a77}.st26{opacity:.75}.st27{fill:#fff}.st30,.st31,.st32,.st33,.st34{fill:#ffe3dc;stroke:#33475c;stroke-linecap:round;stroke-linejoin:round}.st31,.st32,.st33,.st34{fill:#6976d4}.st32,.st33,.st34{fill:#c78244}.st33,.st34{fill:none;stroke:#33475b}.st34{fill:#fff}.st36,.st37,.st38,.st39,.st40,.st41,.st42,.st43,.st44{fill:#7b97b7;stroke:#33475c;stroke-linecap:round;stroke-linejoin:round}.st37,.st38,.st39,.st40,.st41,.st42,.st43,.st44{fill:#cbd6e3}.st38,.st39,.st40,.st41,.st42,.st43,.st44{fill:#00a48d}.st39,.st40,.st41,.st42,.st43,.st44{fill:#f7d3af}.st40,.st41,.st42,.st43,.st44{fill:#0091b2}.st41,.st42,.st43,.st44{fill:#f55257}.st42,.st43,.st44{fill:#ff8f52}.st43,.st44{fill:#7bded2}.st44{fill:#00bea5}.st45,.st47{enable-background:new}.st45{stroke:#33475c;stroke-linecap:round;stroke-linejoin:round;opacity:.25;fill:#33475c}.st47{opacity:.5;fill:#fff}.st48,.st49{stroke:#33475c;stroke-linecap:round;stroke-linejoin:round}.st48{stroke-width:3;fill:#fff}.st49{fill:#cafdff}.st50{fill:#eaf0f6}.st50,.st51,.st52{stroke:#33475c;stroke-linecap:round;stroke-linejoin:round}.st51{stroke-width:3;fill:#7bded2}.st52{fill:#fbe1b2}.st53{fill:#ff8f59}.st54,.st55,.st56,.st57,.st58,.st60{stroke:#33475c;stroke-linecap:round;stroke-linejoin:round}.st54{opacity:.15;enable-background:new;fill:#33475c}.st55,.st56,.st57,.st58,.st60{fill:#98acc3}.st56,.st57,.st58,.st60{fill:#d29b6a}.st57,.st58,.st60{fill:#b07557}.st58,.st60{fill:#f5c26b}.st60{fill:#40bbce}.st63,.st72{enable-background:new}.st63{stroke:#33475c;stroke-linecap:round;stroke-linejoin:round;opacity:.1;fill:#33475c}.st72{opacity:.8;fill:#fff}.st73{fill:none;stroke:#33475b;stroke-dasharray:5,5}.st73,.st74,.st76{stroke-linecap:round;stroke-linejoin:round}.st74{fill:#fff1ee;stroke:#33475b}.st76{stroke:#ffc7ac}.st76,.st79{fill:none}.st80{fill:#7fd1de}.st80,.st81,.st83,.st84{stroke:#33475c;stroke-linecap:round;stroke-linejoin:round}.st81{stroke-width:3;fill:#98acc3}.st83,.st84{fill:#d19780}.st84{fill:#b4baea}
+
+.home-page-head {
+  position: absolute;
+  top: 0;
+  width: 430px;
+  padding: 80px 0 0 14px;
+}
+
+.home-page-head h1{
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.home-page-head p{
+  font-size: 18px;
+  line-height: 29px;
+  word-spacing: 1px;
+  margin:18px 0;
+}
+
+.home-page-head .info{
+  font-size: 14px;
+  font-weight: 500;
+  margin: 28px 206px 28px 0;
+  width: 224px;
+  line-height: 23px;
+}
+.home-page-head .home-page-head-btn{
+  background-color: #FF7A59;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 24px 34px;
+  border: none;
+  border-radius: 3px;
+}
+.home-page-head .home-page-head-btn:hover{
+  background-color:#FF7A59;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.home-page-svg::before {
+  content: "";
+  display: block;
+  background: #afebe4;
+  height: 71px;
+  width: 22%;
+  border-top: 2px solid #33475b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.home-page-svg::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #00a48d;
+  height: 132px;
+  width: calc(50vw - 525px);
+  border-top: 2px solid #33475b;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.card-info{
+  padding: 15px 0 0 0;
+}
+.card-info h2{
+  font-size: 32px;
+  font-weight: 900;
+  color: #1b2025;
+  margin: 0 0 7px 0;
+}
+.card-info p{
+  font-size: 18px;
+  line-height: 29px;
+  margin: 18px 0 0 0;
+}
+
+/* Card Style */
+
+.hubspot-card {
+  border: none !important;
+  padding: 20px 10px;
+  line-height: 29px;
+  position: relative;
+  margin: 10px;
+  height: calc(100% - 20px);
+}
+.hubspot-card-heading{
+  font-size: 22px;
+  font-weight: 600;
+  color: #33475b;
+  margin: 11px 0;
+} 
+.hubspot-card-details{
+  font-size: 14px;
+  line-height: 22px;
+  margin: 14px 0;
+  color: #33475b;
+
+}
+.hubspot-cardlist-heading{
+  font-size: 13px;
+  font-weight: 600;
+  margin: 24px 0 15px 0;
+  color: #33475b;
+
+}
+.hubspot-card ul{
+  padding: 0;
+}
+.hubspot-card li {
+  list-style-type: none;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 20px 10px 0;
+  color: #33475b;
+
+}
+
+.hubspot-card li:before {
+  content: "";
+  background: url(//cdn2.hubspot.net/hubfs/53/assets/hubspot.com/partners/images/Orange_Checkmark.svg) no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+
+.hubspot-card-btn{
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  width: 100% !important;
+  padding: 14px 21px 9px 21px !important;
+  background-color: #FF7A59 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  margin: 10px 0 0 0;
+}
+
+.hubspot-card-btn:hover{
+  opacity: 0.7;
+}
+
+.hubspot-card-status{
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  font-size: 10px;
+  font-weight: 700;
+  background-color: #00BDA5;
+  border-radius: 15px 2px 2px 15px;
+  padding: 0 10px 0 10px;
+  color: #FFFFFF;
+  line-height: 20px;
+}
+/* End */
+
+.hubspot-support {
+  background-image: linear-gradient(45deg,#00a4bd,#00bda5);
+  height: 89vh;
+  padding: 80px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.hubspot-support-details {
+  padding: 30px 210px;
+}
+
+.hubspot-support-details h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 42px;
+  margin: 16px 0;
+}
+
+.hubspot-support-details p {
+  font-size: 18px;
+  line-height: 29px;
+  margin: 18px 0;
+  cursor: default;
+}
+
+.hubspot-support-table td{
+  width: 270px;
+  height: 190px;
+  padding: 30px;
+}
+
+.hubspot-support-table tr:first-child td {
+  border-top: 0px !important;
+  border-right: 1px solid #FFFFFF;
+}
+
+.hubspot-support-table tr:last-child td {
+  border-right: 1px solid #FFFFFF;
+}
+
+.hubspot-support-table tr:first-child td:last-child,
+.hubspot-support-table tr:last-child td:last-child{
+  border-right: 0px;
+}
+
+.hubspot-support-table img{
+  padding-top: 20px;
+}
+
+.hubspot-support-table h2{
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 45px;
+  margin: 0 0 5px 0;
+  padding: 20px 10px 0 0;
+}
+
+.hubspot-support-table p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.hubspot-profile {
+  padding: 100px 0 100px 0;
+  color: #33475B;
+}
+
+.hubspot-profile h2{
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 52px;
+  margin-bottom: 5px;
+  padding-top: 30px;
+}
+
+.hubspot-profile p{
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.32px;
+  width: 350px;
+}
+
+.hubspot-profile-logos {
+  text-align: center;
+  padding: 10px;
+  height: 68px;
+  line-height: 29px;
+  margin: 15px auto;
+}
+
+.hubspot-logo-container {
+  padding-bottom: 100px;
+}
+
+.hubspot-profile-logos img{
+  max-height: 100%;
+  width: 100%;
+}
+
+.hubspot-profile-img {
+  text-align: right;
+}
+
+.hubspot-profile-img img{
+  height: 415px;
+  width: 350px;
+}
+
+.hubspot-profile-img-container h2{
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 46px;
+  margin-bottom: 20px;
+}
+
+.hubspot-profile-img-container p{
+  font-size: 18px;
+  line-height: 29px;
+  margin:18px 0;
+  width: 90%;
+}
+
+.hubspot-profile-img-container .info{
+  font-size: 14px;
+  font-weight: 500;
+  margin: 28px 206px 28px 0;
+  line-height: 23px;
+  width: max-content;
+}
+
+.hubspot-profile-img-container Button{
+  background-color: #FF7A59;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 24px 34px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+ 
+}
+
+.hubspot-profile-img-container Button:hover {
+  background-color: #FF7A59;
+  opacity: 0.7;
+}
+
+.hubspot-footer{
+  height: 710px;
+  background-color: #33475B;
+  color: #FFFFFF;
+  padding: 80px 0 0 0;
+}
+
+.hubspot-footer-card{
+  background-color: inherit !important;
+  border: none !important;
+}
+
+.hubspot-footer-card .card-body{
+  padding: 0;
+}
+
+.hubspot-footer .footer-icon{
+  margin:25px 13px 0 13px; 
+  cursor: pointer;
+
+}
+
+.footer-lang{
+  margin: 45px 0;
+}
+
+.footer-lang span{
+  margin:0 16px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #CBD6E2;
+}
+.footer-lang span:hover{
+  color:#7FD1DE;
+}
+
+.privacy{
+  font-size: 18px;
+  font-weight: 600;
+  color:#CBD6E2;
+  margin:20px 25px 20px 0;
+  cursor: pointer;
+
+}
+.privacy:hover{
+  color:#7FD1DE;
+}
+
+.footer-image{
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #CBD6E2;
+  cursor: pointer;
+
+}
+.footer-image:hover{
+  color:#7FD1DE;
+}
+
+
+.footer-copy{
+  font-size: 14px;
+  margin:14px 0;
+  color:#CBD6E2;
+  cursor: pointer;
+
+}
+
+.footer-head{
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.footer-link{
+  font-size: 14px;
+  font-weight: 600;
+  color:#CBD6E2;
+  cursor: pointer;
+}
+
+.footer-link:hover{
+  color: #7FD1DE;
+}
+
+
+.lang-drop{
+  background-color: #FFFFFF;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lang{
+  font-size: 16px;
+  font-weight: 600;
+  margin:4px 10px 4px 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.update-svg{
+  background-image: url(https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/circleLight1.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
 }
